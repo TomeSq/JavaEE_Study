@@ -1,0 +1,22 @@
+body {
+    font-size: 12pt;
+    font-family: メイリオ,osaka;
+}
+#main{
+    width: 800px;
+    margin: auto;
+}
+#headder{
+}
+#sidebar {
+    width: 250px;
+    float: left;
+}
+#contents {
+    width: 550px;
+    float: right;
+}
+#footer {
+    
+    margin-top: 340px;
+}
