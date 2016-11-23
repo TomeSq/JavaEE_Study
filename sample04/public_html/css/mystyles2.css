@@ -1,0 +1,23 @@
+body{
+    font-size: 14pt;
+    font-family: メイリオ, Osaka;
+    margin: 30px;
+}
+
+table, td, th{
+    border: solid 1px #aaa;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+th{
+    background-color: #99ccff;
+}
+
+.c1 {
+    width: 100px;
+}
+
+.c2 {
+    width: 300px;
+}
