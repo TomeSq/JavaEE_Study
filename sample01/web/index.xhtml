@@ -3,10 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Sample01</title>
     </h:head>
     <h:body>
-        Hello from Facelets あいうえお
+        <h2>名簿データの作成</h2>
+        <h:form>
+            番号：<h:inputText value="#{meiboBean.number}" /><br/>
+            氏名：<h:inputText value="#{meiboBean.name}" /><br/>
+            <h:commandButton value="送信" actionListener="#{maiboBean.toConsole()}"/>
+        </h:form>
     </h:body>
 </html>
 
