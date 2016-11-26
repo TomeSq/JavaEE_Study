@@ -9,8 +9,9 @@ public class MeiboBean {
     private Integer number;
     private String name;
 
-    public void toConsole(){
-        System.out.println("number=" + this.number + " / name=" + this.name);
+    public void toConsole()
+    {
+        System.out.println("number=" + this.number + " / " + "name=" + this.name);
     }
     
     public Integer getNumber() {
@@ -28,4 +29,5 @@ public class MeiboBean {
     public void setName(String name) {
         this.name = name;
     }
+    
 }
