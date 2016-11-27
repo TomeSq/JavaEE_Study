@@ -53,3 +53,4 @@ nbdist/
 hs_err_pid*
 
 /*/nbproject/private
+/chapter02/ex01/nbproject/private/
