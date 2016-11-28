@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Sample04-1</title>
+        <h:outputStylesheet name="mystyle.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h2>名簿データの確認</h2>
+        <h:form>
+            <h:panelGrid columns="2"  cellspacing="0" rules="all" border="1" columnClasses="c1,c2">
+                <f:facet name="header">
+                    panelGridによる表
+                </f:facet>
+                <f:facet name="footer">
+                    fotterセット
+                </f:facet>
+                <f:facet name="caption">
+                    captionセット
+                </f:facet>
+                番号<h:outputText value="#{meiboBean.number}"/>
+                氏名<h:outputText value="#{meiboBean.name}"/>
+
+            </h:panelGrid>
+            <h:link outcome="index" style="display:block; margin-top:10px;">［戻る］</h:link>
+        </h:form>
+    </h:body>
+</html>
+

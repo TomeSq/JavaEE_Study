@@ -1,0 +1,18 @@
+body {
+    font-size: 12pt;
+    font-family: メイリオ, Osaka;
+    margin:30px;
+    line-height: 1.5em;
+}
+h1  { font-size: 1.5em; }
+
+.c1 {width:100px; text-align: center; background-color: #dddddd; padding:3px;}
+.c2 {width:200px; padding:3px;}
+
+.btn {
+    margin-top:10px; 
+    width:100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding:3px;
+}
