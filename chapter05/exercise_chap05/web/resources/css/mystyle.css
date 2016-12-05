@@ -1,0 +1,27 @@
+body {
+    font-size: 12pt;
+    font-family: メイリオ, Osaka;
+    margin:30px;
+    line-height: 1.5em;
+}
+h1  { font-size: 1.5em; }
+.btn {
+    margin-top:10px; 
+    width:100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding:3px;
+}
+.link {display:block; margin-top:10px;}
+.errors {
+    color:  #cc0066;
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
+.pg td{ vertical-align: top; }
+.tx {padding:3px;}
+.ta {padding:3px; background-color: #ccEEFF}
+.c1 {width:120px; background-color: #dddddd; padding:3px; vertical-align: top;}
+.c2 {width:220px; padding:3px;vertical-align: top;}
+pre {margin: 0px;}
+.footer{padding:10px; color:blue; font-size: 0.9em;}

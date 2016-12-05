@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Sample06-4</title>
+        <h:outputStylesheet name="mystyle.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h1>問診表</h1>
+        <h:form>
+            <h:panelGrid columns="2" border="1" cellspacing="0" rules="all" columnClasses="c1,c2" footerClass="footer">
+                <f:facet name="header">
+                    以下の内容で受け付けました
+                </f:facet>
+                お名前<h:outputText value="#{bb.name}"/>
+                体重（kg)<h:outputText value="#{bb.weight}"/>
+                身長（m）<h:outputText value="#{bb.height}"/>
+                特記事項<h:panelGroup><pre>#{bb.msg}</pre></h:panelGroup>
+                <f:facet name="footer">
+                    <h:outputFormat value="{0}さんのBMIは{1}なので{2}です">
+                        <f:param value="#{bb.name}"/>
+                        <f:param value="#{bb.bmi}"/>
+                        <f:param value="#{bb.bmiMessage}"/>
+                    </h:outputFormat>
+                </f:facet>
+            </h:panelGrid>
+            <h:link outcome="index" styleClass="link">［戻る］</h:link>
+        </h:form>
+    </h:body>
+</html>
+

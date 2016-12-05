@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <h:outputStylesheet name="mystyle.css" library="css"/>
+        <title>Sample06-05</title>
+    </h:head>
+    <h:body>
+        <h1>エラーメッセージ（一括）</h1>
+        <h:form>
+            <h:panelGrid columns="2" columnClasses="col">
+                メール<h:inputText id="mail" required="true" 
+                                value="#{bb.mail}" size="30" label="メール"/>
+                ご質問<h:inputTextarea id="msg" required="true"
+                                    value="#{bb.msg}" cols="30" rows="5" label="ご質問" />
+            </h:panelGrid>
+            <h:commandButton value="送信" action="#{bb.next()}" />                                                       
+            <h:messages errorClass="error"/>
+        </h:form>
+    </h:body>
+</html>
+
