@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <h:outputStylesheet name="mystyle.css" library="css"/>
+        <title>Sample06-01</title>
+    </h:head>
+    <h:body>
+        <h1>画面入力</h1>
+        <h:form>
+            <h:panelGrid columns="2" columnClasses="col">
+                メール<h:inputText value="#{bb.mail}" size="30"/>
+                ご質問<h:inputTextarea value="#{bb.msg}" cols="30" rows="5" />
+            </h:panelGrid>
+            <h:commandButton value="送信" action="#{bb.next()}" />                                                       
+        </h:form>
+    </h:body>
+</html>
+
