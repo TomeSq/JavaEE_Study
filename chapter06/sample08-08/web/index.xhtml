@@ -10,10 +10,12 @@
     <h:body>
         <h1>メニュー</h1>
         <h:form>
-            <h:selectOneMenu value="#{bb.city}" styleClass="sel">
+            <h:selectOneMenu value="#{bb.city}" styleClass="sel" label="都市" required="true" requiredMessage="都市を選択してください。" >
+                <f:selectItem itemLabel="--選択--" noSelectionOption="true"/>
                 <f:selectItems value="#{bb.items}" />
             </h:selectOneMenu><br/>
             <h:commandButton value="送信" action="#{bb.next()}"/>
+            <h:messages errorClass="error"/>
         </h:form>
     </h:body>
 </html>
