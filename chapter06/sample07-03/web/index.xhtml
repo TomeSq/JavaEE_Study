@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Sample07-3</title> 
+        <h:outputStylesheet  name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>h:linkの使用例（getリクエスト）</h1>
+        <h:panelGrid columns="2" columnClasses="c1, c2">
+            ①<h:link >再表示</h:link> 
+            ②<h:link outcome="output">内部ページへのリンク</h:link> 
+            ③<h:link outcome="output">
+                内部ページへのデータ付きリンク
+                <f:param name="data" value="Hello"/>
+            </h:link>
+        </h:panelGrid>
+    </h:body>
+</html>
+
+
+

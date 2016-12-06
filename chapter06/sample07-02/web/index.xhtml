@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Sample07-2</title> 
+        <h:outputStylesheet  name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>コマンドリンクの使用例</h1>
+        <h:form>
+            入力<h:inputText value="#{bb.data}" />
+            <h:panelGrid columns="4" columnClasses="c1,c2,c1,c2" >
+                ①<h:commandLink >送信</h:commandLink>
+                ②<h:commandLink action="#{bb.next()}" >送信</h:commandLink>
+                ③<h:commandLink action="#{bb.next()}" onclick="alert('クリックした')" >
+                    JavaScript+送信
+                </h:commandLink>
+                ④<h:commandLink action="#{bb.next()}">
+                    <h:graphicImage library="images" name="mouseL.gif"/>
+                    送信
+                </h:commandLink>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
+
+

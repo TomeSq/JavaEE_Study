@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Sample07-01</title> 
+        <h:outputStylesheet  name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>コマンドボタンの使用例</h1>
+        <h:form>
+            入力<h:inputText value="#{bb.data}"/>
+            <h:panelGrid columns="4" columnClasses="c1,c2,c1,c2">
+                ①<h:commandButton value="送信" />
+                ②<h:commandButton value="リセット" type="reset" />
+                ③<h:commandButton value="JavaScript" type="button" onclick="alert('ボタンが押された')"/>
+                ④<h:commandButton value="送信" action="#{bb.next()}"/>
+                ⑤<h:commandButton image="/resources/images/mouseL.gif" action="#{bb.next()}"/>
+                ⑥<h:commandButton value="JavaScript+送信"  action="#{bb.next()}" onclick="alert('ボタンが押された')"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
+
+
