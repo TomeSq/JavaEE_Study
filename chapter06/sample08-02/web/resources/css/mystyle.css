@@ -1,0 +1,22 @@
+	
+/* sample08のための共通CSS */
+
+.inp {								/* チェックボックスとラジオボタン用 */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+.sel {								/* リストとメニュー用 */
+    width : 70px;					/* 見やすくするため横幅を広げます */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+/* 以下は全体の表示位置、フォントの指定 */
+body {
+    font-family: メイリオ ,Osaka;
+    font-size: 12pt;
+    margin: 30px;
+    line-height: 2em;
+}
+h1 {
+    font-size: 1.2em;
+}
