@@ -1,0 +1,41 @@
+/* 共通CSS */
+body {
+    font-family: メイリオ ,Osaka;
+    font-size: 12pt;
+    margin: 10px 10px 10px 20px;
+    line-height: 2.0em;
+}
+/* sample09-03のためのCSS  */
+.hd1 {/* 表全体のヘッダー */
+    font-size: 1.2em;			/* 大きめの文字 */
+    text-align: left;			/* 左寄せ */
+}
+.hd2 {/* ヘッダー行 */
+    font-weight: normal;		/* 太字にしない */
+    text-align: center;			/* 中央揃え */
+    background-color: #d0d0d0;	/* グレーの背景色 */
+}
+.row {/* ヘッダー以外の行 */
+    background-color: #dbe9f9;	/* 薄い青の背景色 */
+}
+.c1	{/* １列目 */
+    width: 100px;				/* 横幅を100pxに */
+    text-align: center;			/* 中央揃え */
+}
+.c2	{/* ２列目 */
+    width: 100px;				/* 横幅を100pxに */
+    padding-left: 10px;			/* 左端に10pxの余白 */
+}
+.c3	{/* ３列目 */
+    width: 200px;				/* 横幅を300pxに */
+    padding-left: 10px;			/* 左端に10pxの余白 */
+}
+.c4	{/* ４列目 */
+    width: 50px;				/* 横幅を20pxに */
+    text-align: center;			/* 中央揃え */
+}
+.inp {/* h:inputTextに適用 */
+    font-family: メイリオ ,Osaka;	/* 中央揃え */	
+    font-size: 1.0em;				/* 他の行の文字と同じにする */
+    border: none;					/* 入力領域を枠で囲わない */
+}
