@@ -15,11 +15,30 @@
                     以下の内容で受け付けました
                 </f:facet>
                 お名前
+                <h:panelGroup>
+                    <h:outputText value="#{bb.name}"/>
+                </h:panelGroup>
+                    
                 生年
+                <h:panelGroup>
+                    <h:outputText value="#{bb.year}"/>
+                </h:panelGroup>
                 性別
+                <h:panelGroup>
+                    <h:outputText value="#{bb.stringSex}"/>
+                </h:panelGroup>
                 地域
+                <h:panelGroup>
+                    <h:outputText value="#{bb.region}"/>
+                </h:panelGroup>
                 関心分野
+                <h:panelGroup>
+                    <h:outputText value="#{bb.stringInterests}"/>
+                </h:panelGroup>
                 メルマガ
+                <h:panelGroup>
+                    <h:outputText value="#{bb.stringMagazine}"/>
+                </h:panelGroup>
             </h:panelGrid>
             <h:link outcome="index" styleClass="link">［戻る］</h:link>
         </h:form>
