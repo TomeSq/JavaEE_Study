@@ -1,0 +1,59 @@
+body {	/* 全体の設定 */
+    font-size: 12pt;
+    font-family: メイリオ, Osaka;
+    margin:30px;
+    line-height: 1.5em;
+}
+h1  { font-size: 1.5em; }	/* 見出し */
+.btn {	/* h:commandButton用 */
+    margin-top:10px; 
+    width:100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding:3px;
+}
+.errors {	/* h:messagetタグ用 */
+    color:  #cc0066;					/* 赤色 */
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
+.c10 {	/* index.xhtmlのpanelGrid１列目 */
+    width:140px;					/* 幅を120pxにする */
+    padding:5px 3px 3px 10px;			/* 上、右、下、左の順にパディングを指定 */
+    vertical-align: top;				/* 上端揃え */
+    border-right: solid 1px #666666;		/* 左側にボーダーライン */
+
+}
+.c20 {	/* index.xhtmlのpanelGrid２列目 */
+    width:500px;						/* 幅を500pxにする */
+    padding:5px 3px 3px 20px;			/* 上、右、下、左の順にパディングを指定 */
+    vertical-align: top; }				/* 上端揃え */
+
+/* index.xhtmlのpanelGridを奇数行と偶数行で違う色に塗り分ける */
+.row_odd{background-color: #e1effc}			/* 奇数行用。背景を薄い青色に */
+.row_even{background-color: #f0f0f0}			/* 偶数行用。背景を薄いグレーに */
+.c11 {	/* output.xhtmlのpanelGrid１列目 */
+    width:120px;					/* 幅を120pxにする */
+    background-color: #dddddd;		/* 背景色を薄いグレーにする*/
+    padding:3px;					/* 周囲に3pxの余白を入れる */
+    vertical-align: top;			/* 上端揃え */
+}
+.c21 {	/* output.xhtmlのpanelGrid２列目 */
+    width:220px;					/* 幅を220pxにする */
+    padding:3px;					/* 周囲に3pxの余白を入れる */
+    vertical-align: top;			/* 上端揃え */
+}
+.tx {	/* テキストフィールド用 */
+    padding:3px;					/* 周囲に3pxの余白を入れる */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+.inp {	/* チェックボックスとラジオボタン用 */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+.sel {	/* リストとメニュー用 */
+    width : 70px;					/* 見やすくするため横幅を広げる */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}

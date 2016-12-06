@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>練習</title>
+        <h:outputStylesheet name="mystyle.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h1>登録結果</h1>
+        <h:form>
+            <h:panelGrid columns="2"  cellspacing="0" rules="all" border="1" columnClasses="c11,c21">
+                <f:facet name="header">
+                    以下の内容で受け付けました
+                </f:facet>
+                お名前
+                生年
+                性別
+                地域
+                関心分野
+                メルマガ
+            </h:panelGrid>
+            <h:link outcome="index" styleClass="link">［戻る］</h:link>
+        </h:form>
+    </h:body>
+</html>
+
