@@ -1,0 +1,10 @@
+/* sample09のための共通CSS */
+body {
+    font-family: メイリオ ,Osaka;
+    font-size: 12pt;
+    margin: 10px 10px 10px 20px;
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 1.2em;
+}

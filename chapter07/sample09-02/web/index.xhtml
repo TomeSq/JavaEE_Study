@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>sample09-2</title>
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h:dataTable value="#{bb.meibo}" var="m">
+            <f:facet name="header">会員一覧表</f:facet>
+            <h:column>
+                <f:facet name="header">番号</f:facet>
+                    #{m.number}
+            </h:column>
+            <h:column>
+                <f:facet name="header">氏名</f:facet>
+                    #{m.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">メール</f:facet>
+                    #{m.mail}
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</html>
+
