@@ -24,8 +24,9 @@ public class Bb implements Serializable {
     }
 
     public String edit(Book book) {
-        /* ここに処理を記述 */
-
+        if(!book.isEditable()){
+            book.setEditable(true);
+        }
         return null;
     }
 

@@ -9,25 +9,37 @@
     </h:head>
     <h:body>
         <h:form>
-            <h:dataTable value="#{bb.books}" var="m" >
-                <h:column >
+            <div style="overflow: auto; height: 600px;">
+            <h:dataTable value="#{bb.books}" var="m" columnClasses="c1,c2,c3,c4,c5" headerClass="hd1" rowClasses="row">
+                <f:facet name="header">書籍リスト</f:facet>
+                <h:column headerClass="hd2">
+                    <f:facet name="header">書名</f:facet>
                     <h:commandLink action="#{bb.edit(m)}">
-                        <h:outputText value="#{m.title}"/>
+                        <h:outputText value="#{m.title}" rendered="#{!m.editable}"/>
                     </h:commandLink>
+                    <h:inputText value="#{m.title}" rendered="#{m.editable}" size="29" styleClass="inp"/>
                 </h:column>
-                <h:column >
-                    <h:outputText value="#{m.author}"/>
+                <h:column headerClass="hd2">
+                    <f:facet name="header">著者</f:facet>
+                    <h:inputText value="#{m.author}" rendered="#{m.editable}" size="7" styleClass="inp"/>
+                    <h:outputText value="#{m.author}" rendered="#{!m.editable}"/>
                 </h:column>
-                <h:column >
-                    <h:outputText value="#{m.publisher}"/>
+                <h:column headerClass="hd2">
+                    <f:facet name="header">出版社</f:facet>
+                    <h:inputText value="#{m.publisher}" rendered="#{m.editable}" size="7" styleClass="inp"/>
+                    <h:outputText value="#{m.publisher}" rendered="#{!m.editable}"/>
                 </h:column>
-                <h:column >
-                    <h:outputText value="#{m.date}"/>
+                <h:column headerClass="hd2">
+                    <f:facet name="header">出版年</f:facet>
+                    <h:inputText value="#{m.date}" rendered="#{m.editable}" size="4" styleClass="inp"/>
+                    <h:outputText value="#{m.date}" rendered="#{!m.editable}"/>
                 </h:column>
-                <h:column >
+                <h:column headerClass="hd2">
+                    <f:facet name="header">編集</f:facet>
                     <h:selectBooleanCheckbox value="#{m.editable}" onclick="submit()"/>
                 </h:column>
             </h:dataTable>
+            </div>
             <h:commandButton action="#{bb.next()}" value="変更を保存"/>
         </h:form>
     </h:body>
