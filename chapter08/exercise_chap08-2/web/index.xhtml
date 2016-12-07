@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">	
+    <h:head>
+        <title>8章 練習</title> 
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>書籍データ</h1>
+        <h:form>
+            <h:panelGrid columns="3">
+                タイトル
+                <h:inputText id="title" value="#{bb.title}" p:placeholder="30文字以内" required="true"/>
+                <h:message for="title" styleClass="error"/>
+                コード
+                <h:inputText id="isbn" value="#{bb.code}" p:placeholder="5桁" required="true"/>
+                <h:message for="isbn" styleClass="error"/>
+                売上日
+                <h:inputText id="date" value="#{bb.date}" p:placeholder="2020/01/01" required="true">
+                    <f:convertDateTime pattern="yyyy/M/d" />
+                </h:inputText>		
+                <h:message for="date" styleClass="error"/>
+                金　額
+                <h:inputText id="amount" value="#{bb.amount}" p:placeholder="30000以下" required="true"/>
+                <h:message for="amount" styleClass="error"/>
+            </h:panelGrid>
+            <h:commandButton action="#{bb.next}" value="送信"/>
+        </h:form>
+    </h:body>
+</html>
+
