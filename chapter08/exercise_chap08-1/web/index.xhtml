@@ -14,16 +14,25 @@
         <h:form>
             <h:panelGrid columns="3">
                 タイトル
-                <h:inputText id="title" value="#{bb.title}" p:placeholder="30文字以内" required="true"/>
+                <h:inputText id="title" value="#{bb.title}" p:placeholder="30文字以内" required="true" >
+                    <f:validateLength maximum="30"/>
+                </h:inputText>
                 <h:message for="title" styleClass="error"/>
                 コード
-                <h:inputText id="code" value="#{bb.code}" p:placeholder="5桁" required="true"/>
+                <h:inputText id="code" value="#{bb.code}" p:placeholder="5桁" required="true">
+                    <f:validateRegex pattern="^a[0-9]{4}"/>
+                </h:inputText>
+                
                 <h:message for="code" styleClass="error"/>
                 売上日
-                <h:inputText id="date" value="#{bb.date}" p:placeholder="2020/01/01" required="true"/>
+                <h:inputText id="date" value="#{bb.date}" p:placeholder="2020/01/01" required="true" >
+                    <f:convertDateTime pattern="yyyy/M/d"/>
+                </h:inputText>
                 <h:message for="date" styleClass="error"/>
                 金　額
-                <h:inputText id="amount" value="#{bb.amount}" p:placeholder="30000以下" required="true"/>
+                <h:inputText id="amount" value="#{bb.amount}" p:placeholder="30000以下" required="true">
+                    <f:validateLongRange minimum="0" maximum="29000"/>
+                </h:inputText>
                 <h:message for="amount" styleClass="error"/>
             </h:panelGrid>
             <h:commandButton action="#{bb.next}" value="送信"/>
