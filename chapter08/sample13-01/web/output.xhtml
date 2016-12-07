@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>sample13-01</title> 
+        <h:outputStylesheet name="mystyle.css" library="css" />        
+    </h:head>
+    <h:body>
+        <h1>ビーンバリデーション</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                コード
+                <h:outputText value="#{bb.code}" />
+                金　額
+                <h:outputText value="#{bb.amount}">
+                    <f:convertNumber type="currency" />
+                </h:outputText>
+                割引率
+                <h:outputText value="#{bb.rate}" />
+                日　付
+                <h:outputText value="#{bb.date}" >
+                    <f:convertDateTime pattern="yyyy/M/d"/>
+                </h:outputText>
+            </h:panelGrid>
+            <h:link  outcome="index"  value="戻る" />
+        </h:form>
+    </h:body>
+</html>
+
