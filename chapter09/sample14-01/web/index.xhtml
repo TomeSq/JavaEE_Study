@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample14-01</title>
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>テキスト編集</h1>
+        <h:form>
+            <h:panelGrid columns="1">
+                <h:inputTextarea value="#{bb.text}" cols="60" rows="25"/>
+                <h:commandButton action="#{bb.next()}" value="変更を保存"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
