@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>answer_chap10</title> 
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+
+        <h1>#{res.title}</h1>
+        <h:form>
+            <h:panelGrid columns="3">
+                #{res.code}
+                <h:inputText  id="code" value="#{bb.code}" p:placeholder="2～5文字"/>
+                <h:message id="msgCode" for="code" styleClass="error"/>
+                #{res.amount}
+                <h:inputText id="amount" value="#{bb.amount}" p:placeholder="100～10000"/>
+                <h:message id="msgAmount" for="amount" styleClass="error"/>
+                #{res.rate}
+                <h:inputText id="rate" value="#{bb.rate}" p:placeholder="0.5～20.5"/>
+                <h:message id="msgRate" for="rate" styleClass="error"/>
+                #{res.date}
+                <h:inputText id="date" value="#{bb.date}" p:placeholder="2000/01/01">
+                    <f:convertDateTime pattern="yyyy/M/d" />
+                </h:inputText>                
+                <h:message id="msgDate" for="date" styleClass="error"/>
+            </h:panelGrid>
+            <h:commandButton action="output" value="#{res.confirm_button}"/>
+        </h:form>
+    </h:body>
+</html>
+

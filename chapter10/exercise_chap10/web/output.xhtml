@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>exercise_chap10</title> 
+        <h:outputStylesheet name="mystyle.css" library="css" />        
+    </h:head>
+    <h:body>
+        <h1>#{res.title}</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                #{res.code}
+                <h:outputText value="#{bb.code}" />
+                #{res.amount}
+                <h:outputText value="#{bb.amount}">
+                    <f:convertNumber type="currency" />
+                </h:outputText>
+                #{res.rate}
+                <h:outputText value="#{bb.rate}" />
+                #{res.date}
+                <h:outputText value="#{bb.date}" >
+                    <f:convertDateTime pattern="yyyy/M/d"/>
+                </h:outputText>
+            </h:panelGrid>
+            <h:link  outcome="index"  value="#{res.return_link}" />
+        </h:form>
+    </h:body>
+</html>
+
