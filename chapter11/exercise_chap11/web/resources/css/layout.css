@@ -1,0 +1,17 @@
+#top {
+    width:600px;				/* 横幅440px */
+}
+#left {
+    width: 240px;				/* 横幅120px */
+    float: left;				/* 左に寄せる */
+}
+#content {
+    width: 340px;				/* 横幅300px */
+    margin-left:260px;			/* 左端から140px離す */
+}
+#bottom {
+    width:600px;				/* 横幅440px */
+    clear: both;				/* floatを解除 */
+}
+
+
