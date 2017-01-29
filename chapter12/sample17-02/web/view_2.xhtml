@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample17-02</title>
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>会話スコープ＜画面２＞</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                お名前<h:inputText value="#{bb.name}" />
+                ご住所<h:inputText value="#{bb.address}" />
+                <h:commandButton value="戻る"  action="#{bb.goto_1}" />
+                <h:commandButton value="第３画面へ移る"  action="#{bb.goto_3()}" />
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+

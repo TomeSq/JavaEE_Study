@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample17-02</title>
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>会話スコープ＜画面３＞</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                お名前:<h:outputText value="#{bb.name}" />
+                ご住所:<h:outputText value="#{bb.address}" />                
+                商品名:<h:outputText value="#{bb.product}" />
+                数　量:<h:outputText value="#{bb.qty}" />
+                <h:commandButton value="戻る"  action="#{bb.goto_2}" />
+                <h:commandButton value="購入する"  action="#{bb.goto_0()}" />
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
