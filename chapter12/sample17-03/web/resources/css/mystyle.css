@@ -1,0 +1,13 @@
+body, textArea {
+    font-family: メイリオ ,Osaka;
+    font-size: 12pt;
+    margin: 10px 10px 10px 20px;	/* 上、右、下、左の順でマージンを指定 */
+    line-height: 1em;
+}
+h1 {
+    font-size: 1.2em;
+}
+.error{
+    font-size: 0.7em;
+}
+
