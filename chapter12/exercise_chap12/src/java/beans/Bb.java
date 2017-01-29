@@ -1,6 +1,7 @@
 package beans;
 
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
 @Named
@@ -10,10 +11,12 @@ public class Bb {
     private int val;
     private String s;
     /* ここにBinをインジェクトする */
+    
+    @Inject
+    private Bin bin;
 
     public String next() {
-        /* 10進数を2進数に変換する処理 */
-
+        setS(bin.toBin(getVal()));
         return null;
     }
 

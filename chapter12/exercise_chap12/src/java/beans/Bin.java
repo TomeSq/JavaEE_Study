@@ -1,5 +1,8 @@
 package beans;
 
+import javax.enterprise.context.Dependent;
+
+@Dependent
 public class Bin {
 
     //toBinメソッドは引数の10進数aを２進数表記の文字列にして返す
