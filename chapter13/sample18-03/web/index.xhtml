@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample18-03</title>
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>非同期処理</h1>
+        <h:form>
+            <h:panelGrid columns="2" columnClasses="col">
+                宛　先<h:inputText value="#{bb.mail}" size="30"/>
+                題　名<h:inputText value="#{bb.title}" size="40"/>
+                連絡文<h:inputTextarea value="#{bb.msg}" cols="40" rows="10" />
+            </h:panelGrid>
+            <h:commandButton value="送信" action="#{bb.next()}" />                                                       
+        </h:form>
+        <p class="note">あなたのメールアドレスや、メールID、パスワードなどをBb.javaに書き込んでから実行してください</p>
+    </h:body>
+</html>
+
