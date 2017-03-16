@@ -4,6 +4,7 @@ import javax.ejb.EJB;
 import javax.ejb.Schedule;
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
+import javax.inject.Inject;
 
 @Stateless
 public class WeatherNews {
@@ -11,7 +12,7 @@ public class WeatherNews {
     @EJB
     WeatherFeed feed;
 
-    @EJB
+    @Inject
     private Event<String> event;
     
     // イベントオブジェクトをインジェクトする
